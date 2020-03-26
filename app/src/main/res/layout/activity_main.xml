@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5F1E8"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/emptySpace1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/cleanItTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="cleanIT"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:layout_below="@id/emptySpace1"
+        app:fontFamily="@font/abril_fatface" />
+
+    <TextView
+        android:id="@+id/emptySpace2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text=""
+        android:layout_below="@id/cleanItTitle"/>
+
+    <TextView
+        android:id="@+id/firstDescriptiveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emptySpace2"
+        android:layout_centerHorizontal="true"
+        android:text="Fast laundry for"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        app:fontFamily="@font/abril_fatface" />
+
+    <TextView
+        android:id="@+id/secondDescriptiveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="busy people."
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:layout_below="@id/firstDescriptiveText"
+        app:fontFamily="@font/abril_fatface" />
+
+    <TextView
+        android:id="@+id/emptySpace3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text=""
+        android:layout_below="@id/secondDescriptiveText"/>
+
+    <RelativeLayout
+        android:id="@+id/googleSignUpButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/white_rectangle"
+
+        android:layout_below="@id/emptySpace3"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="goToGoogleSignUpPage">
+
+        <TextView
+            android:id="@+id/emptySpaceInner1"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/googleIcon"
+            android:layout_toRightOf="@id/emptySpaceInner1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/google_icon" />
+
+        <TextView
+            android:id="@+id/emptySpaceInner2"
+            android:layout_toRightOf="@id/googleIcon"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Sign up with Google"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/emptySpaceInner2"
+            app:fontFamily="@font/abril_fatface"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/emptySpace4"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text=""
+        android:layout_below="@id/googleSignUpButton"/>
+
+    <RelativeLayout
+        android:id="@+id/facebookSignUpButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/white_rectangle"
+        android:layout_below="@id/emptySpace4"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="goToFacebookSignUpPage">
+
+        <TextView
+            android:id="@+id/emptySpaceInner3"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/facebookIcon"
+            android:layout_toRightOf="@id/emptySpaceInner3"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/facebook_logo" />
+
+        <TextView
+            android:id="@+id/emptySpaceInner4"
+            android:layout_toRightOf="@id/facebookIcon"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Sign up with Facebook"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/emptySpaceInner4"
+            app:fontFamily="@font/abril_fatface"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/emptySpace5"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text=""
+        android:layout_below="@id/facebookSignUpButton"/>
+
+    <RelativeLayout
+        android:id="@+id/emailSignUpButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/white_rectangle"
+        android:layout_below="@id/emptySpace5"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="goToEmailSignUpPage">
+
+        <TextView
+            android:id="@+id/emptySpaceInner5"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/emailIcon"
+            android:layout_toRightOf="@id/emptySpaceInner5"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/email_logo" />
+
+        <TextView
+            android:id="@+id/emptySpaceInner6"
+            android:layout_toRightOf="@id/emailIcon"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Sign up with Email"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/emptySpaceInner6"
+            app:fontFamily="@font/abril_fatface"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/emptySpace6"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text=""
+        android:layout_below="@id/emailSignUpButton"/>
+
+    <TextView
+        android:id="@+id/alreadyHaveAnAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Already have an account?"
+        android:layout_below="@id/emptySpace6"/>
+
+    <TextView
+        android:id="@+id/emptySpace7"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:text=""
+        android:layout_below="@id/alreadyHaveAnAccount"/>
+
+    <RelativeLayout
+        android:id="@+id/signInButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/white_rectangle"
+        android:layout_below="@id/emptySpace7"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="goToSignInPage">
+
+
+
+        <TextView
+            android:id="@+id/signInText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Sign in"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:fontFamily="@font/abril_fatface"/>
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
