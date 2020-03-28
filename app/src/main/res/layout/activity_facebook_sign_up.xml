@@ -157,7 +157,7 @@
         android:layout_below="@id/emptySpace5"
         android:layout_centerHorizontal="true"
         android:clickable="true"
-        android:onClick="goToSignInPage">
+        android:onClick="goToAdditionalSignUpPage">
 
 
 
