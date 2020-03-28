@@ -1,9 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FacebookSignUp">
+    android:background="#E5F1E8"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/emptySpace1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/facebokSignUpTitle"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+
+        android:layout_below="@id/emptySpace1">
+
+        <TextView
+            android:id="@+id/emptySpaceInner1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/facebookIcon"
+            android:layout_toRightOf="@id/emptySpaceInner1"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/facebook_logo" />
+
+        <TextView
+            android:id="@+id/emptySpaceInner2"
+            android:layout_toRightOf="@id/facebookIcon"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Facebook Sign Up"
+            android:textSize="30sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/emptySpaceInner2"
+            app:fontFamily="@font/abril_fatface"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/emptySpace2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text=""
+        android:layout_below="@id/facebokSignUpTitle"/>
+
+    <TextView
+        android:id="@+id/firstDescriptiveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emptySpace2"
+        android:layout_centerHorizontal="true"
+        android:text="Enter an account"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        app:fontFamily="@font/abril_fatface" />
+
+    <TextView
+        android:id="@+id/secondDescriptiveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="to connect to cleanIT"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:layout_below="@id/firstDescriptiveText"
+        app:fontFamily="@font/abril_fatface" />
+
+    <TextView
+        android:id="@+id/emptySpace3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text=""
+        android:layout_below="@id/secondDescriptiveText"/>
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emptySpace3"
+
+        android:text="Email"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:fontFamily="@font/abril_fatface"
+        android:layout_marginLeft="100dp"/>
+
+    <EditText
+        android:id="@+id/emailInputText"
+        android:layout_below="@id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/grey"/>
+
+    <TextView
+        android:id="@+id/emptySpace4"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text=""
+        android:layout_below="@id/emailInputText"/>
+
+    <TextView
+        android:id="@+id/passwordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emptySpace4"
+
+        android:text="Password"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:fontFamily="@font/abril_fatface"
+        android:layout_marginLeft="100dp"/>
+
+    <EditText
+        android:id="@+id/passwordInputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordText"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_marginLeft="100dp"/>
+
+    <TextView
+        android:id="@+id/emptySpace5"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text=""
+        android:layout_below="@id/passwordInputText"/>
+
+
+    <RelativeLayout
+        android:id="@+id/signInButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/white_rectangle"
+        android:layout_below="@id/emptySpace5"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="goToSignInPage">
+
+
+
+        <TextView
+            android:id="@+id/signInText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Connect"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:fontFamily="@font/abril_fatface"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/emptySpace6"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text=""
+        android:layout_below="@id/signInButton"/>
+
+    <TextView
+        android:id="@+id/extraText1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="To continue, facebook will share your name,"
+        android:layout_below="@id/emptySpace6"/>
+
+    <TextView
+        android:id="@+id/extraText2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="email address, language preference and "
+        android:layout_below="@id/extraText1"/>
+
+    <TextView
+        android:id="@+id/extraText3"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="profile picture with cleanIT"
+        android:layout_below="@id/extraText2"/>
+
+</RelativeLayout>
