@@ -14,13 +14,13 @@
         android:text="" />
 
     <TextView
-        android:id="@+id/additionalInformationTitle"
+        android:id="@+id/paymentInfoTitle"
         android:layout_width="350dp"
         android:layout_height="30dp"
         android:orientation="horizontal"
         android:layout_below="@id/emptySpace1"
         android:textColor="@android:color/black"
-        android:text="Additional Information"
+        android:text="Payment Information"
         app:fontFamily="@font/abril_fatface"
         android:textSize="25sp"
         android:layout_marginLeft="40dp"/>
@@ -31,14 +31,14 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:text=""
-        android:layout_below="@id/additionalInformationTitle"/>
+        android:layout_below="@id/paymentInfoTitle"/>
 
     <TextView
         android:id="@+id/extraInfo"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
 
-        android:text="Few more steps to finalize your account..."
+        android:text="Add your card details"
         android:layout_below="@id/emptySpace2"
         android:layout_marginLeft="40dp"/>
 
@@ -50,8 +50,8 @@
         android:layout_below="@id/extraInfo"/>
 
     <TextView
-        android:id="@+id/phoneNumber"
-        android:text="Phone number"
+        android:id="@+id/cardType"
+        android:text="Card type"
         android:layout_below="@id/emptySpace3"
 
         android:layout_width="wrap_content"
@@ -61,9 +61,71 @@
         android:textSize="18sp"
         android:layout_marginLeft="40dp"/>
 
+    <LinearLayout
+        android:id="@+id/visaType"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/cardType"
+        android:layout_marginStart="40dp">
+
+
+        <RadioButton
+            android:id="@+id/visaRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Visa" />
+
+        <RadioButton
+            android:id="@+id/mastercardRradioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mastercard" />
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/nameOnCard"
+        android:text="Name on card"
+        android:layout_below="@id/visaType"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"/>
+
     <EditText
-        android:id="@+id/phoneNumberInput"
-        android:layout_below="@id/phoneNumber"
+        android:id="@+id/nameOnCardInput"
+        android:layout_below="@id/nameOnCard"
+        android:layout_marginLeft="40dp"
+
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/cardNumber"
+        android:text="Card number"
+        android:layout_below="@id/nameOnCardInput"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:id="@+id/cardNumberInput"
+        android:layout_below="@id/cardNumber"
         android:layout_marginLeft="40dp"
 
         android:layout_width="300dp"
@@ -72,9 +134,9 @@
         android:inputType="number" />
 
     <TextView
-        android:id="@+id/streetAddress"
-        android:text="Street Address"
-        android:layout_below="@id/phoneNumberInput"
+        android:id="@+id/expirationDate"
+        android:text="Expiration Date"
+        android:layout_below="@id/cardNumberInput"
 
         android:layout_width="wrap_content"
         android:layout_height="30dp"
@@ -83,20 +145,57 @@
         android:textSize="18sp"
         android:layout_marginLeft="40dp"/>
 
-    <EditText
-        android:id="@+id/streetAddressInput"
-        android:layout_below="@id/streetAddress"
-        android:layout_marginLeft="40dp"
+    <LinearLayout
+        android:id="@+id/monthExpiration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/expirationDate"
+        android:layout_marginStart="40dp">
 
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:ems="10"
-        android:inputType="textPersonName" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Month"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/update_month_expiration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yearExpiration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/expirationDate"
+        android:layout_marginStart="150dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Year"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/update_year_expiration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
 
     <TextView
-        android:id="@+id/apartmentNumber"
-        android:text="Apartment number"
-        android:layout_below="@id/streetAddressInput"
+        android:id="@+id/cvcCode"
+        android:text="CVC code"
+        android:layout_below="@id/monthExpiration"
 
         android:layout_width="wrap_content"
         android:layout_height="30dp"
@@ -105,109 +204,34 @@
         android:textSize="18sp"
         android:layout_marginLeft="40dp"/>
 
+
+
     <EditText
-        android:id="@+id/apartmentNumberInput"
-        android:layout_below="@id/apartmentNumber"
+        android:id="@+id/cvcCodeInput"
+        android:layout_below="@id/cvcCode"
         android:layout_marginLeft="40dp"
 
         android:layout_width="300dp"
         android:layout_height="30dp"
         android:ems="10"
         android:inputType="number" />
-
-    <TextView
-        android:id="@+id/city"
-        android:text="City"
-        android:layout_below="@id/apartmentNumberInput"
-
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:textColor="@android:color/black"
-        app:fontFamily="@font/abril_fatface"
-        android:textSize="18sp"
-        android:layout_marginLeft="40dp"/>
-
-    <EditText
-        android:id="@+id/cityInput"
-        android:layout_below="@id/city"
-        android:layout_marginLeft="40dp"
-
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
-    <TextView
-        android:id="@+id/postalCode"
-        android:text="Postal code"
-        android:layout_below="@id/cityInput"
-
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:textColor="@android:color/black"
-        app:fontFamily="@font/abril_fatface"
-        android:textSize="18sp"
-        android:layout_marginLeft="40dp"/>
-
-    <EditText
-        android:id="@+id/postalCodeInput"
-        android:layout_below="@id/postalCode"
-        android:layout_marginLeft="40dp"
-
-        android:layout_width="300dp"
-        android:layout_height="30dp"
-        android:ems="10"
-        android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/emptySpace4"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:text=""
-        android:layout_below="@id/postalCodeInput"/>
+        android:layout_below="@id/cvcCodeInput"/>
 
-    <TextView
-        android:id="@+id/paymentTitle"
-        android:text="Payment"
-        android:layout_below="@id/emptySpace4"
 
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:textColor="@android:color/black"
-        app:fontFamily="@font/abril_fatface"
-        android:textSize="20sp"
-        android:layout_marginLeft="40dp"/>
-
-    <TextView
-        android:id="@+id/addPaymentButton"
-        android:text="+ Add a credit card or a debit card"
-        android:layout_below="@id/paymentTitle"
-        android:background="@drawable/color_change_button"
-
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:textColor="@color/colorPrimary"
-        app:fontFamily="@font/abril_fatface"
-        android:textSize="18sp"
-        android:layout_marginLeft="40dp"
-        android:clickable="true"
-        android:onClick="goToPaymentInformation"
-        />
-
-    <TextView
-        android:id="@+id/emptySpace5"
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:text=""
-        android:layout_below="@id/addPaymentButton"/>
 
     <RelativeLayout
-        android:id="@+id/finalizeButton"
-        android:layout_width="100dp"
+        android:id="@+id/addButton"
+        android:layout_width="80dp"
         android:layout_height="40dp"
         android:orientation="horizontal"
         android:background="@drawable/white_rectangle"
-        android:layout_below="@id/emptySpace5"
+        android:layout_below="@id/emptySpace4"
         android:layout_centerHorizontal="true"
         android:clickable="true"
         android:onClick="goToAdditionalSignUpPage">
@@ -219,11 +243,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@android:color/black"
-            android:text="Finalize"
+            android:text="Add"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             app:fontFamily="@font/abril_fatface"/>
     </RelativeLayout>
+
+
 
 
 
