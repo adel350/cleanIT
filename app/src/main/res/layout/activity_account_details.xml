@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5F1E8"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/emptySpace1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/yourAccountTitle"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/emptySpace1"
+        android:textColor="@android:color/black"
+        android:text="Your account"
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="25sp"
+        android:layout_marginLeft="40dp"/>
+
+
+    <TextView
+        android:id="@+id/emptySpace2"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:text=""
+        android:layout_below="@id/yourAccountTitle"/>
+
+
+
+    <TextView
+        android:id="@+id/pendingOrders"
+        android:text="Pending orders"
+        android:layout_below="@id/emptySpace2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/extraInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+
+        android:text="Orders that have been picked up"
+        android:layout_below="@id/pendingOrders"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/emptySpace3"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:text=""
+        android:layout_below="@id/extraInfo1"/>
+
+    <RelativeLayout
+        android:id="@+id/firstPendingOrder"
+        android:layout_width="305dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/green_rectangle"
+        android:layout_below="@id/emptySpace3"
+        android:layout_marginLeft="40dp" >
+
+        <TextView
+            android:id="@+id/emptySpaceInner1"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/truckIcon"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/emptySpaceInner1"
+
+            app:srcCompat="@drawable/pickup_delivery" />
+
+        <TextView
+            android:id="@+id/emptySpaceInner2"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/truckIcon"/>
+
+        <View
+            android:id="@+id/verticalSeparator"
+            android:layout_width="2dp"
+            android:layout_height="58dp"
+            android:layout_centerVertical="true"
+            android:background="@color/grey"
+            android:layout_toRightOf="@id/emptySpaceInner2"/>
+
+        <TextView
+            android:id="@+id/emptySpaceInner3"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/verticalSeparator"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/infoForPendingOrder1"
+            android:layout_toRightOf="@id/emptySpaceInner3"
+            android:layout_centerVertical="true"
+            android:layout_width="305dp"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/orderNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Order #: 24"
+                android:layout_centerVertical="true"
+                app:fontFamily="@font/abril_fatface"/>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Status: delivery/en route"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/emptySpaceInner4"
+                app:fontFamily="@font/abril_fatface"/>
+
+            <TextView
+                android:id="@+id/expectedDelivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Expected delivery: today @8pm"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/emptySpaceInner4"
+                app:fontFamily="@font/abril_fatface"/>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/emptySpace4"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:text=""
+        android:layout_below="@id/firstPendingOrder"/>
+
+    <RelativeLayout
+        android:id="@+id/secondPendingOrder"
+        android:layout_width="305dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/green_rectangle"
+        android:layout_below="@id/emptySpace4"
+        android:layout_marginLeft="40dp" >
+
+        <TextView
+            android:id="@+id/emptySpaceInner1"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/washingIcon"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/emptySpaceInner1"
+
+            app:srcCompat="@drawable/washing_machine" />
+
+        <TextView
+            android:id="@+id/emptySpaceInner2"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/washingIcon"/>
+
+        <View
+            android:id="@+id/verticalSeparator"
+            android:layout_width="2dp"
+            android:layout_height="58dp"
+            android:layout_centerVertical="true"
+            android:background="@color/grey"
+            android:layout_toRightOf="@id/emptySpaceInner2"/>
+
+        <TextView
+            android:id="@+id/emptySpaceInner3"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/verticalSeparator"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/infoForPendingOrder1"
+            android:layout_toRightOf="@id/emptySpaceInner3"
+            android:layout_centerVertical="true"
+            android:layout_width="305dp"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/orderNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Order #: 25"
+                android:layout_centerVertical="true"
+                app:fontFamily="@font/abril_fatface"/>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Status: washing"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/emptySpaceInner4"
+                app:fontFamily="@font/abril_fatface"/>
+
+            <TextView
+                android:id="@+id/expectedDelivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Expected delivery: tuesday @7pm"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/emptySpaceInner4"
+                app:fontFamily="@font/abril_fatface"/>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/emptySpace5"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text=""
+        android:layout_below="@id/secondPendingOrder"/>
+
+    <View
+        android:id="@+id/horizontalSeparator"
+        android:layout_width="305dp"
+        android:layout_height="3dp"
+        android:layout_marginLeft="40dp"
+
+        android:background="@color/grey"
+        android:layout_below="@id/emptySpace5"/>
+
+    <TextView
+        android:id="@+id/recentOrders"
+        android:text="Recent orders"
+        android:layout_below="@id/horizontalSeparator"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/extraInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+
+        android:text="Orders waiting to be picked up"
+        android:layout_below="@id/recentOrders"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/emptySpace6"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:text=""
+        android:layout_below="@id/extraInfo2"/>
+
+    <RelativeLayout
+        android:id="@+id/firstRecentOrder"
+        android:layout_width="305dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/red_rectangle"
+        android:layout_below="@id/emptySpace6"
+        android:layout_marginLeft="40dp" >
+
+        <TextView
+            android:id="@+id/emptySpaceInner1"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/waitingIcon"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/emptySpaceInner1"
+
+            app:srcCompat="@drawable/waiting_icon" />
+
+        <TextView
+            android:id="@+id/emptySpaceInner2"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/waitingIcon"/>
+
+        <View
+            android:id="@+id/verticalSeparator"
+            android:layout_width="2dp"
+            android:layout_height="58dp"
+            android:layout_centerVertical="true"
+            android:background="@color/grey"
+            android:layout_toRightOf="@id/emptySpaceInner2"/>
+
+        <TextView
+            android:id="@+id/emptySpaceInner3"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/verticalSeparator"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/infoForPendingOrder1"
+            android:layout_toRightOf="@id/emptySpaceInner3"
+            android:layout_centerVertical="true"
+            android:layout_width="305dp"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/orderNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Order #: 26"
+                android:layout_centerVertical="true"
+                app:fontFamily="@font/abril_fatface"/>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Status: waiting for pickup"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/emptySpaceInner4"
+                app:fontFamily="@font/abril_fatface"/>
+
+            <TextView
+                android:id="@+id/expectedDelivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Expected pickup: tomorrow @6pm"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/emptySpaceInner4"
+                app:fontFamily="@font/abril_fatface"/>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/emptySpace7"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text=""
+        android:layout_below="@id/firstRecentOrder"/>
+
+    <View
+        android:id="@+id/horizontalSeparator2"
+        android:layout_width="305dp"
+        android:layout_height="3dp"
+        android:layout_marginLeft="40dp"
+
+        android:background="@color/grey"
+        android:layout_below="@id/emptySpace7"/>
+
+    <TextView
+        android:id="@+id/emptySpace8"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text=""
+        android:layout_below="@id/horizontalSeparator2"/>
+
+    <RelativeLayout
+        android:id="@+id/newOrderButton"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/white_rectangle"
+        android:layout_below="@id/emptySpace8"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="goToAccountDetails">
+
+
+
+        <TextView
+            android:id="@+id/placeNewOrderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Place new order"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:fontFamily="@font/abril_fatface"/>
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

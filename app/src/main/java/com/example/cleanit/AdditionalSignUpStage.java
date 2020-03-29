@@ -18,4 +18,9 @@ public class AdditionalSignUpStage extends AppCompatActivity {
         Intent intent = new Intent(this, PaymentInformation.class);
         startActivity(intent);
     }
+
+    public void goToAccountDetails(View view) {
+        Intent intent = new Intent(this, AccountDetails.class);
+        startActivity(intent);
+    }
 }

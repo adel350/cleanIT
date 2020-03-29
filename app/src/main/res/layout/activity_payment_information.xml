@@ -234,7 +234,7 @@
         android:layout_below="@id/emptySpace4"
         android:layout_centerHorizontal="true"
         android:clickable="true"
-        android:onClick="goToAdditionalSignUpPage">
+        android:onClick="addPaymentInformation">
 
 
 
