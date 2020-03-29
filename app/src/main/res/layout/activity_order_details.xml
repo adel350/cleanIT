@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5F1E8"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/emptySpace1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/orderDetailsTitle"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/emptySpace1"
+        android:textColor="@android:color/black"
+        android:text="Order Details"
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="25sp"
+        android:layout_marginLeft="40dp"/>
+
+
+    <TextView
+        android:id="@+id/emptySpace2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text=""
+        android:layout_below="@id/orderDetailsTitle"/>
+
+    <TextView
+        android:id="@+id/extraInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+
+        android:text="Fill your order details here"
+        android:layout_below="@id/emptySpace2"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/emptySpace3"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text=""
+        android:layout_below="@id/extraInfo"/>
+
+    <TextView
+        android:id="@+id/numberOfItems"
+        android:text="Number of items"
+        android:layout_below="@id/emptySpace3"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"/>
+
+    <LinearLayout
+        android:id="@+id/numberOfItemsInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/numberOfItems"
+        android:layout_marginStart="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Items"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/update_items_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/pickupTimeSlot"
+        android:text="Pickup time slot"
+        android:layout_below="@id/numberOfItemsInput"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/dayPickup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/pickupTimeSlot"
+        android:layout_marginStart="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Day"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/update_day_pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/timePickup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/pickupTimeSlot"
+        android:layout_marginStart="150dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Time"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/update_time_pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/deliveryTimeSlot"
+        android:text="Delivery time slot"
+        android:layout_below="@id/dayPickup"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"/>
+
+    <LinearLayout
+        android:id="@+id/dayDeliveryPickup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/deliveryTimeSlot"
+        android:layout_marginStart="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Day"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/update_day_delivery_pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/timeDeliveryPickup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/deliveryTimeSlot"
+        android:layout_marginStart="150dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Time"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/update_time_delivery_pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/emptySpace4"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text=""
+        android:layout_below="@id/timeDeliveryPickup"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/placeOrderButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/white_rectangle"
+        android:layout_below="@id/emptySpace4"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="goToAccountDetails">
+
+
+
+        <TextView
+            android:id="@+id/finalizeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Place order"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:fontFamily="@font/abril_fatface"/>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

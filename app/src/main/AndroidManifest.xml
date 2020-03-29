@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AccountDetails"></activity>
+        <activity android:name=".OrderDetails"></activity>
+        <activity android:name=".AccountDetails" />
         <activity android:name=".PaymentInformation" />
         <activity android:name=".AdditionalSignUpStage" />
         <activity android:name=".SignIn" />
