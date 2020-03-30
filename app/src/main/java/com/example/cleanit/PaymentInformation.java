@@ -33,7 +33,7 @@ public class PaymentInformation extends AppCompatActivity {
     }
 
     public void addPaymentInformation(View view) {
-        Intent intent = new Intent(this, AdditionalSignUpStage.class);
+        Intent intent = new Intent(this, BeforeFinalizingScreen.class);
         startActivity(intent);
     }
 }

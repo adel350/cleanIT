@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5F1E8"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/emptySpace1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/additionalInformationTitle"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/emptySpace1"
+        android:textColor="@android:color/black"
+        android:text="Additional Information"
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="25sp"
+        android:layout_marginLeft="40dp"/>
+
+
+    <TextView
+        android:id="@+id/emptySpace2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text=""
+        android:layout_below="@id/additionalInformationTitle"/>
+
+    <TextView
+        android:id="@+id/extraInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+
+        android:text="Few more steps to finalize your account..."
+        android:layout_below="@id/emptySpace2"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/emptySpace3"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text=""
+        android:layout_below="@id/extraInfo"/>
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:text="Phone number"
+        android:layout_below="@id/emptySpace3"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:id="@+id/phoneNumberInput"
+        android:layout_below="@id/phoneNumber"
+        android:layout_marginLeft="35dp"
+        android:text="6134582946"
+
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/streetAddress"
+        android:text="Street Address"
+        android:layout_below="@id/phoneNumberInput"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:id="@+id/streetAddressInput"
+        android:layout_below="@id/streetAddress"
+        android:layout_marginLeft="40dp"
+        android:text="20 George Street"
+
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/apartmentNumber"
+        android:text="Apartment number"
+        android:layout_below="@id/streetAddressInput"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:id="@+id/apartmentNumberInput"
+        android:layout_below="@id/apartmentNumber"
+        android:layout_marginLeft="40dp"
+        android:text="2"
+
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/city"
+        android:text="City"
+        android:layout_below="@id/apartmentNumberInput"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:id="@+id/cityInput"
+        android:layout_below="@id/city"
+        android:layout_marginLeft="40dp"
+        android:text="Ottawa"
+
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/postalCode"
+        android:text="Postal code"
+        android:layout_below="@id/cityInput"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:id="@+id/postalCodeInput"
+        android:layout_below="@id/postalCode"
+        android:layout_marginLeft="40dp"
+        android:text="K1N 5R3"
+
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/emptySpace4"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:text=""
+        android:layout_below="@id/postalCodeInput"/>
+
+    <TextView
+        android:id="@+id/paymentTitle"
+        android:text="Payment"
+        android:layout_below="@id/emptySpace4"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@android:color/black"
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="20sp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/creditCard"
+        android:text="Visa - 6356 **** **** ****"
+        android:layout_below="@id/paymentTitle"
+
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textColor="@android:color/black"
+
+        android:textSize="15sp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/addPaymentButton"
+        android:text="+ Add a different card"
+        android:layout_below="@id/creditCard"
+        android:background="@drawable/color_change_button"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"
+        android:clickable="true"
+        android:onClick="goToPaymentInformation"
+        />
+
+    <TextView
+        android:id="@+id/emptySpace5"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:text=""
+        android:layout_below="@id/addPaymentButton"/>
+
+    <RelativeLayout
+        android:id="@+id/finalizeButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/white_rectangle"
+        android:layout_below="@id/emptySpace5"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="goToAccountDetails">
+
+
+
+        <TextView
+            android:id="@+id/finalizeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Update"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:fontFamily="@font/abril_fatface"/>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
