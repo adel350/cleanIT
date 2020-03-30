@@ -2,7 +2,9 @@ package com.example.cleanit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -53,5 +55,10 @@ public class OrderDetails extends AppCompatActivity {
         spinner_adapter5 = ArrayAdapter.createFromResource(this, R.array.time, android.R.layout.simple_spinner_item);
         spinner_adapter5.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner5.setAdapter(spinner_adapter5);
+    }
+
+    public void goToOrderPlacedPage(View view) {
+        Intent intent = new Intent(this, NewOrderConfirmation.class);
+        startActivity(intent);
     }
 }

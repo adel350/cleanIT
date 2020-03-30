@@ -223,7 +223,7 @@
         android:layout_below="@id/emptySpace4"
         android:layout_centerHorizontal="true"
         android:clickable="true"
-        android:onClick="goToAccountDetails">
+        android:onClick="goToOrderPlacedPage">
 
 
 
