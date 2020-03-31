@@ -18,4 +18,11 @@ public class BeforeFinalizingScreen extends AppCompatActivity {
         Intent intent = new Intent(this, AccountDetails.class);
         startActivity(intent);
     }
+
+    public void goToPaymentInformation(View view) {
+        Intent intent = new Intent(this, PaymentInformation.class);
+        startActivity(intent);
+    }
+
+
 }
