@@ -37,4 +37,9 @@ public class AccountDetails extends AppCompatActivity {
         Intent intent = new Intent(this, OrderDetailsTwo.class);
         startActivity(intent);
     }
+
+    public void goToThirdOrderPage(View view) {
+        Intent intent = new Intent(this, OrderDetailsThree.class);
+        startActivity(intent);
+    }
 }
