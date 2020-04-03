@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UpdateInfoScreen"></activity>
+        <activity android:name=".OrderDetailsOne"></activity>
+        <activity android:name=".UpdateInfoScreen" />
         <activity android:name=".BeforeFinalizingScreen" />
         <activity android:name=".NewOrderConfirmation" />
         <activity android:name=".OrderDetails" />

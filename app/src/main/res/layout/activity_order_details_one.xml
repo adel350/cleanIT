@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5F1E8"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/emptySpace1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/yourAccountTitle"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/emptySpace1"
+        android:textColor="@android:color/black"
+        android:text="Order Details"
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="25sp"
+        android:layout_marginLeft="40dp"/>
+
+
+    <TextView
+        android:id="@+id/extraInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+
+        android:text="View details of your order here"
+        android:layout_below="@id/yourAccountTitle"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/emptySpace3"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text=""
+        android:layout_below="@id/extraInfo1"/>
+
+    <TextView
+        android:id="@+id/orderType"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/emptySpace3"
+        android:textColor="@android:color/black"
+        android:text="Type of order: "
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/orderTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+
+        android:text="Pending order"
+        android:layout_below="@id/orderType"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/emptySpace4"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:text=""
+        android:layout_below="@id/orderTypeText"/>
+
+    <TextView
+        android:id="@+id/orderNumber"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/emptySpace4"
+        android:textColor="@android:color/black"
+        android:text="Order number: "
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/orderNumberText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+
+        android:text="24"
+        android:layout_below="@id/orderNumber"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/emptySpace5"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:text=""
+        android:layout_below="@id/orderNumberText"/>
+
+    <TextView
+        android:id="@+id/itemsNumber"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/emptySpace5"
+        android:textColor="@android:color/black"
+        android:text="Number of items:  "
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/itemsNumberText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+
+        android:text="4"
+        android:layout_below="@id/itemsNumber"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/emptySpace6"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:text=""
+        android:layout_below="@id/itemsNumberText"/>
+
+    <TextView
+        android:id="@+id/statusNow"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/emptySpace6"
+        android:textColor="@android:color/black"
+        android:text="Status: "
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/statusNowText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+
+        android:text="Delivery/En route"
+        android:layout_below="@id/statusNow"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/emptySpace7"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:text=""
+        android:layout_below="@id/statusNowText"/>
+
+    <TextView
+        android:id="@+id/ExpectedDelivery"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/emptySpace7"
+        android:textColor="@android:color/black"
+        android:text="Expected delivery: "
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/ExpectedDeliveryText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+
+        android:text="Today at 8 PM"
+        android:layout_below="@id/ExpectedDelivery"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/emptySpace8"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:text=""
+        android:layout_below="@id/ExpectedDeliveryText"/>
+
+    <TextView
+        android:id="@+id/DeliveryAddress"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/emptySpace8"
+        android:textColor="@android:color/black"
+        android:text="Delivery address: "
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/DeliveryAddressText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+
+        android:text="2 - 20 George street, Ottawa, Ontario"
+        android:layout_below="@id/DeliveryAddress"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/emptySpace9"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:text=""
+        android:layout_below="@id/DeliveryAddressText"/>
+
+    <TextView
+        android:id="@+id/PickupAddress"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/emptySpace9"
+        android:textColor="@android:color/black"
+        android:text="Pickup address: "
+        app:fontFamily="@font/abril_fatface"
+        android:textSize="18sp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/PickupAddressText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+
+        android:text="2 - 20 George street, Ottawa, Ontario"
+        android:layout_below="@id/PickupAddress"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/emptySpace10"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:text=""
+        android:layout_below="@id/PickupAddressText"/>
+
+    <RelativeLayout
+        android:id="@+id/goBackButton"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/white_rectangle"
+        android:layout_below="@id/emptySpace10"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="goBackToAccount">
+
+
+
+        <TextView
+            android:id="@+id/placeNewOrderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Go back to account"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:fontFamily="@font/abril_fatface"/>
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

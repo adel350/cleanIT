@@ -27,4 +27,9 @@ public class AccountDetails extends AppCompatActivity {
         Intent intent = new Intent(this, UpdateInfoScreen.class);
         startActivity(intent);
     }
+
+    public void goToFirstOrderPage(View view) {
+        Intent intent = new Intent(this, OrderDetailsOne.class);
+        startActivity(intent);
+    }
 }
