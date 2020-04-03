@@ -117,7 +117,8 @@
         android:orientation="horizontal"
         android:background="@drawable/green_rectangle"
         android:layout_below="@id/emptySpace3"
-        android:layout_marginLeft="40dp" >
+        android:layout_marginLeft="40dp"
+        android:clickable="true">
 
         <TextView
             android:id="@+id/emptySpaceInner1"
@@ -212,7 +213,8 @@
         android:orientation="horizontal"
         android:background="@drawable/green_rectangle"
         android:layout_below="@id/emptySpace4"
-        android:layout_marginLeft="40dp" >
+        android:layout_marginLeft="40dp"
+        android:clickable="true">
 
         <TextView
             android:id="@+id/emptySpaceInner1"
@@ -344,7 +346,8 @@
         android:orientation="horizontal"
         android:background="@drawable/red_rectangle"
         android:layout_below="@id/emptySpace6"
-        android:layout_marginLeft="40dp" >
+        android:layout_marginLeft="40dp"
+        android:clickable="true">
 
         <TextView
             android:id="@+id/emptySpaceInner1"
