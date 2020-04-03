@@ -32,4 +32,9 @@ public class AccountDetails extends AppCompatActivity {
         Intent intent = new Intent(this, OrderDetailsOne.class);
         startActivity(intent);
     }
+
+    public void goToSecondOrderPage(View view) {
+        Intent intent = new Intent(this, OrderDetailsTwo.class);
+        startActivity(intent);
+    }
 }
