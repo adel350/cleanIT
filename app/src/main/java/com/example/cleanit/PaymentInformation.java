@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
 
 public class PaymentInformation extends AppCompatActivity {
@@ -15,6 +17,10 @@ public class PaymentInformation extends AppCompatActivity {
 
     private Spinner spinner2;
     private ArrayAdapter<CharSequence> spinner_adapter2;
+
+    private EditText nameOnCardEditText;
+    private EditText cardNumberEditText;
+    private EditText cvcCodeEditTExt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +39,40 @@ public class PaymentInformation extends AppCompatActivity {
     }
 
     public void addPaymentInformation(View view) {
-        Intent intent = new Intent(this, BeforeFinalizingScreen.class);
-        startActivity(intent);
+        //Get info before going forward
+        nameOnCardEditText = findViewById(R.id.nameOnCardInput);
+        cardNumberEditText = findViewById(R.id.cardNumberInput);;
+        cvcCodeEditTExt = findViewById(R.id.cvcCodeInput);
+
+        if (validForm()) {
+            Intent intent = new Intent(this, BeforeFinalizingScreen.class);
+            startActivity(intent);
+        }
+    }
+
+    public boolean validForm() {
+        boolean error = true;
+
+        String nameOnCard = nameOnCardEditText.getText().toString().trim();
+        String cardNumber = cardNumberEditText.getText().toString().trim();
+        String cvcCode = cvcCodeEditTExt.getText().toString().trim();
+
+
+        if (TextUtils.isEmpty(nameOnCard)) {
+            nameOnCardEditText.setError("Name on card cannot be empty");
+            error = false;
+        }
+
+        if (TextUtils.isEmpty(cardNumber)) {
+            cardNumberEditText.setError("Card number cannot be empty");
+            error = false;
+        }
+
+        if (TextUtils.isEmpty(cvcCode)) {
+            cvcCodeEditTExt.setError("CVC code cannot be empty");
+            error = false;
+        }
+
+        return error;
     }
 }
